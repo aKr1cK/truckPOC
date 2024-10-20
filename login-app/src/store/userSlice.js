@@ -15,9 +15,11 @@ const initialState = {
         localStorage.setItem('user', JSON.stringify(action.payload));
       },
       logoutUser: (state) => {
+        debugger;
         state.user = null;
         state.isAuthenticated = false;
         localStorage.removeItem('user');
+        console.log('DONE HERE');
       },
     },
   });

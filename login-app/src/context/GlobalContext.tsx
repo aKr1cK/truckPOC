@@ -11,7 +11,6 @@ export const GlobalProvider = ({ children }: any) => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     let [color, setColor] = useState("red");
 
-    let [userInfo,setUserInfo] = useState(null);
     const override: CSSProperties = {
         margin: "0 auto",
         borderColor: "red",
@@ -35,9 +34,7 @@ export const GlobalProvider = ({ children }: any) => {
     return (
         <GlobalContext.Provider value={{
             showToastMsg,
-            setLoading,
-            setUserInfo,
-            userInfo
+            setLoading
         }}>
             {loading && <><div style={{
                 position: "fixed",

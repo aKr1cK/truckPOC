@@ -116,6 +116,8 @@ const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  logoutUser();
+
   const handleLogin = (e) => {
     e.preventDefault();
 

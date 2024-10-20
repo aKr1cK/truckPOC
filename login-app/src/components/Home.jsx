@@ -21,7 +21,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   if (!user) {
-    navigate('/login');
+    navigate('/login', { replace: true });
   }
 
   return (
