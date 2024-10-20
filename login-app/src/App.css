@@ -1,0 +1,14 @@
+/* Fixed footer at the bottom */
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Add padding to avoid content overlap with footer */
+main {
+    padding-bottom: 70px;
+    /* Match the footer height */
+}
